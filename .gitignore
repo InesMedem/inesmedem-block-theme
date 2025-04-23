@@ -1,0 +1,36 @@
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+/wp-content/plugins/
+/wp-content/themes/inesmedem/node_modules/
+
+# Ignore IDE/editor files
+/.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore npm dependencies (if you're using npm)
+node_modules/
+
+# Ignore WordPress debug log
+wp-content/debug.log
+
+# Ignore log files
+*.log
+
+# Ignore cache directories
+wp-content/cache/
+wp-content/uploads/
+
+# Ignore temporary files
+*.swp
+*.bak
+*.tmp
