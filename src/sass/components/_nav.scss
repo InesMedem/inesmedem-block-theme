@@ -1,0 +1,48 @@
+/** MENU  **/
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav_menu {
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  padding: 5px 10px;
+  max-width: 1300px; 
+  margin: 0 auto; 
+  margin-top: 20px;
+  border: 2px solid var(--notion-dark);
+  font-weight: 900;
+
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+/* styles get only applied so long as the screen is at least 900px */
+
+@media (max-width: 900px) {
+
+  .nav_menu {
+      flex-direction: column;
+      justify-content: space-between;      
+  }
+  .nav_list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav {
+  background-color: #fca02f37;
+  flex-direction: column;
+}
+
+}

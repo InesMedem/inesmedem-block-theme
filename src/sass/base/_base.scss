@@ -1,0 +1,46 @@
+/** GENERAL  **/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PPTelegraf", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  background-color: var(--notion);
+  color: var(--charcol);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 20px 0;
+  max-width: 1300px; 
+  margin: 0 auto; 
+}
+
+section {
+  margin-bottom: 5rem !important;
+}
+
+
+button {
+  padding: 12px 20px;
+  font-size: medium;
+  font-family: "PPTelegraf", Arial, sans-serif;
+  background-color: var(--yellow);
+  border-radius: var(--border-radius-40);
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  border: none;
+}
+
+.arrow-btn {
+
+}

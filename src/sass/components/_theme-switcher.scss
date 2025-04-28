@@ -1,0 +1,48 @@
+
+/** THEME SWICTHER  **/
+
+  .darkmode {
+  --yellow: #fa8900;
+  --charcol: white;
+  --notion: black;
+  --notion-dark: #363636;
+  --white: #363636;
+
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+  }
+
+  .sun {
+    background-color: #fa8900;
+  }
+
+  .moon {
+    background-color: black;
+  }
+
+  #theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+
+#theme-switch div:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch div:first-child {
+  display:none;
+}
+
+.darkmode #theme-switch div:last-child {
+  display:block;
+}

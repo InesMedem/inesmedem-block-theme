@@ -1,0 +1,21 @@
+
+// 1. Base
+@import "base/variables";
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+
+// 3. Blocks
+@import "blocks/portfolio-slider";
+@import "blocks/destinations-grid";
+
+// 2. Components
+@import "components/nav";
+@import "components/theme-switcher";
+
+// 4. Global
+@import "global/footer";
+@import "global/header";
+
+// 5. Page
+@import "pages/home";
