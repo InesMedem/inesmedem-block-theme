@@ -44,8 +44,3 @@ function register_portfolio_cpt() {
 	);
 }
 add_action( 'init', 'register_portfolio_cpt' );
-
-function theme_setup() {
-	add_theme_support( 'menus' );
-}
-add_action( 'after_setup_theme', 'theme_setup' );

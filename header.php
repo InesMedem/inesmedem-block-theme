@@ -8,26 +8,20 @@
 
 <body>
 	<header>
-	<div class="nav_menu">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/navlogo.svg" alt="Logo">
+		<div class="nav__container">
+			<a href="<?php echo get_site_url(); ?>"><img src="<?php echo wp_get_attachment_url( 4924 ); ?>" alt="Logo"></a>
 
-		<nav>
-			<?php
-				wp_nav_menu(
-					[
-						'theme_location' => 'main-menu',
-						'menu_class'     => 'nav_list',
-						'container'      => false,
-					]
-				);
-				?>
+			<nav class="nav__list">
+				<li> <a href="<?php echo get_site_url() . '/about'; ?>"> About  </a> </li>
+				<li> <a href="<?php echo get_site_url() . '/portfolio'; ?>"> Portfolio  </a>  </li>
+				<li> <a href="<?php echo get_site_url() . '/blog'; ?>"> Blog  </a>  </li>
 
-			<div id="theme-switch">
-				<div class="circle sun"></div>
-				<div class="circle moon"></div>
-			</div>
-			
-			<div><button>Contact</button></div>
-		</nav>
-	</div>
+				<div id="theme-switch">
+					<div class="circle sun"></div>
+					<div class="circle moon"></div>
+				</div>
+				
+				<div><button>Contact</button></div>
+			</nav>
+		</div>
 	</header>
