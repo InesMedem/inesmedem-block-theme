@@ -20,27 +20,11 @@ function mytheme_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_assets' );
 
+
+// * ------------------- UPLOAD SVGS //* -------------------
+
 function enable_svg_uploads( $mimes ) {
 	$mimes['svg'] = 'image/svg+xml';
 	return $mimes;
 }
 add_filter( 'upload_mimes', 'enable_svg_uploads' );
-
-function register_portfolio_cpt() {
-	register_post_type(
-		'portfolio',
-		[
-			'labels'       => [
-				'name'          => 'Portfolio',
-				'singular_name' => 'Portfolio Item',
-			],
-			'public'       => true,
-			'has_archive'  => true,
-			'rewrite'      => [ 'slug' => 'portfolio' ],
-			'supports'     => [ 'title', 'editor', 'thumbnail' ],
-			'menu_icon'    => 'dashicons-portfolio',
-			'show_in_rest' => true,
-		]
-	);
-}
-add_action( 'init', 'register_portfolio_cpt' );

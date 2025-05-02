@@ -2,7 +2,6 @@
 
 <main class="site-main">
 	<section class="archive-content">
-		<h1>This is arcihe tempalte</h1>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="archive-header">
@@ -15,7 +14,7 @@
 		while ( have_posts() ) :
 			the_post();
 			?>
-			<?php get_template_part( 'template-parts/card', get_post_type() ); ?>
+			<?php get_template_part( 'template-parts/slide', get_post_type() ); ?>
 		<?php endwhile; ?>
 		</div>
 
