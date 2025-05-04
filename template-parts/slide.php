@@ -1,6 +1,6 @@
 <div class="card">
 	<?php if ( has_post_thumbnail() ) : ?>
-	<img class="card-img" src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="<?php the_title_attribute(); ?>">
+	<img class="card-img" src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title_attribute(); ?>">
 	<?php endif; ?>
 
 	<div class="title-btn">

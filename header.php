@@ -21,7 +21,7 @@
 					<div class="circle moon"></div>
 				</div>
 				
-				<div><button>Contact</button></div>
+				<div><button> <a href="<?php echo get_site_url() . '/contact'; ?>">Contact</a></button></div>
 			</nav>
 		</div>
 	</header>

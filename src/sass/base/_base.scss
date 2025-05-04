@@ -20,8 +20,26 @@ img {
 
 main {
   padding: 20px 0;
-  max-width: 1300px; 
+  max-width: 1230px; 
   margin: 0 auto; 
+
+}
+
+
+.archive-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // gap: 1rem;
+}
+
+article {
+
+    max-width: 900px; 
+      margin: 0 auto; 
+
+
+  
 }
 
 section {
@@ -44,3 +62,4 @@ button {
 .arrow-btn {
 
 }
+
