@@ -28,3 +28,5 @@ function enable_svg_uploads( $mimes ) {
 	return $mimes;
 }
 add_filter( 'upload_mimes', 'enable_svg_uploads' );
+
+// * ------------------- BLOCKS //* -------------------

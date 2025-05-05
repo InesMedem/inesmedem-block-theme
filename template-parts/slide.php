@@ -4,7 +4,9 @@
 	<?php endif; ?>
 
 	<div class="title-btn">
-	<span><h3 class="sub-title"><?php the_title(); ?></h3></span>
-	<img class="arrow-btn" src="<?php echo get_template_directory_uri(); ?>/assets/arrow_right.svg" alt="Arrow">
+	<span><h5 class=""><?php the_title(); ?></h5></span>
+	
+	<img src="<?php echo wp_get_attachment_url( 3649 ); ?>">
+
 	</div>
 </div>

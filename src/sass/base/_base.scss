@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "PPTelegraf", Arial, sans-serif;
+  font-family: PPTelegraf, Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-size: large;
@@ -30,7 +30,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // gap: 1rem;
+  // gap: 1rem;gap
 }
 
 article {
@@ -50,7 +50,7 @@ section {
 button {
   padding: 12px 20px;
   font-size: medium;
-  font-family: "PPTelegraf", Arial, sans-serif;
+  font-family: PPTelegraf, Arial, sans-serif;
   background-color: var(--yellow);
   border-radius: var(--border-radius-40);
   text-transform: uppercase;

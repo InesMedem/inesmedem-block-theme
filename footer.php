@@ -1,5 +1,5 @@
 <footer class="footer" >
-	<div class="footer__logo"><img class="footer__logo-image" src="assets/white-logo.png"></div>
+	<div class="footer__logo"><a href="<?php echo get_site_url(); ?>"><img src="<?php echo wp_get_attachment_url( 923 ); ?>" alt="Logo"></a></div>
 
 	<div class="footer__content">
 	<div class="footer__icons">

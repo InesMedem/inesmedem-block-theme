@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<div class="nav__container">
-			<a href="<?php echo get_site_url(); ?>"><img src="<?php echo wp_get_attachment_url( 4924 ); ?>" alt="Logo"></a>
+			<a href="<?php echo get_site_url(); ?>"><img src="<?php echo wp_get_attachment_url( 2859 ); ?>" alt="Logo"></a>
 
 			<nav class="nav__list">
 				<li> <a href="<?php echo get_site_url() . '/about'; ?>"> About  </a> </li>
