@@ -1,11 +1,8 @@
-const { useBlockProps, RichText, MediaUpload } = wp.blockEditor;
-const { Button } = wp.components;
+const { useBlockProps } = wp.blockEditor;
 
-
-export default function save() {    
-
+export default function save() {
   return (
-    <div {...useBlockProps()}>
+    <div {...useBlockProps.save()}>
       <section className="hero">
         <div className="hero_text-wrapper">
           <h3 className="sub-title--yellow">Welcome dear friend,</h3>
