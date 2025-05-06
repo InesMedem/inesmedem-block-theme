@@ -8,10 +8,10 @@ get_header();
 	<section class="hero">
 		<div class="hero_text-wrapper">
 			<h3 class="sub-title--yellow">Welcome dear friend,</h3>
-			<h1 class="hero_title">Web Development Solutions <img class="hero_star" src="<?php echo wp_get_attachment_url( 4925 ); ?>"></h1>			<p class="hero_text">Creating responsive, user-friendly websites that elevate your online presence. I help startups, small businesses, and entrepreneurs engage their audience and drive growth with expert web development and design.</p>
+			<h1 class="hero_title">Web Development Solutions <img class="hero_star" src="<?php echo wp_get_attachment_url( 114 ); ?>"></h1>			<p class="hero_text">Creating responsive, user-friendly websites that elevate your online presence. I help startups, small businesses, and entrepreneurs engage their audience and drive growth with expert web development and design.</p>
 			<div class="hero_btn"><button> <a href="#">Get in touch</a></button></div>
 		</div class="hero__img-wrapper">
-			<div>  <img class="hero_headshot hover-image levitate-image" src="<?php echo wp_get_attachment_url( 4915 ); ?>">
+			<div>  <img class="hero_headshot hover-image levitate-image" src="<?php echo wp_get_attachment_url( 5006 ); ?>">
 </div>
 	</section>
 

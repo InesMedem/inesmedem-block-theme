@@ -34,3 +34,6 @@ wp-content/uploads/
 *.swp
 *.bak
 *.tmp
+
+# Ignore build directory
+/build
