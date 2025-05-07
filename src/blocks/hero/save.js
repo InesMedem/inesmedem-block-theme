@@ -11,6 +11,7 @@ export default function save() {
 						<img
 							className="hero_star"
 							src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
+							alt="alt-text"
 						/>
 					</h1>
 					<p className="hero_text">
@@ -30,6 +31,7 @@ export default function save() {
 						<img
 							className="hero_headshot hover-image levitate-image"
 							src="http://blocks.test/wp-content/uploads/2025/05/ines-medem-1.png"
+							alt="alt-text"
 						/>
 					</div>
 				</div>
