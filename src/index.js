@@ -1,12 +1,26 @@
-import './sass/style.scss'; // Import the SCSS to compile
+import './sass/style.scss';
 
+// Hero block
 import './blocks/hero/style.scss';
-import Edit from './blocks/hero/edit';
-import save from './blocks/hero/save';
-import metadata from './blocks/hero/block.json';
+import EditHero from './blocks/hero/edit';
+import saveHero from './blocks/hero/save';
+import metadataHero from './blocks/hero/block.json';
 
-wp.blocks.registerBlockType(metadata.name, {
-	...metadata,
-	Edit,
-	save,
+// CTA block
+import './blocks/cta/style.scss';
+import EditCTA from './blocks/cta/edit';
+import saveCTA from './blocks/cta/save';
+import metadataCTA from './blocks/cta/block.json';
+
+// Register blocks
+wp.blocks.registerBlockType(metadataHero.name, {
+	...metadataHero,
+	edit: EditHero,
+	save: saveHero,
+});
+
+wp.blocks.registerBlockType(metadataCTA.name, {
+	...metadataCTA,
+	edit: EditCTA,
+	save: saveCTA,
 });
