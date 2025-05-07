@@ -1,7 +1,7 @@
 {
 	"apiVersion": 2,
-	"name": "inesmedem/hero",
-	"title": "Hero Block",
+	"name": "inesmedem/card",
+	"title": "Card Block",
 	"category": "theme",
 	"icon": "cover-image",
 	"editorScript": "theme-blocks",
