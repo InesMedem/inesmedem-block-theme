@@ -1,25 +1,23 @@
 :root {
-  --yellow: #fca12f;
-  --charcol: #363636;
-  --notion: #fafafa;
-  --notion-dark: #f2f2f0;
-  --white: white;
+	--yellow: #fca12f;
+	--charcol: #363636;
+	--notion: #fafafa;
+	--notion-dark: #f2f2f0;
+	--white: white;
 
-  --font-size-sm: clamp(12px, 1vw, 14px);
-  --font-size-md: clamp(14px, 1.2vw, 18px);
-  --font-size-lg: clamp(18px, 2vw, 24px);
-  --font-size-xl: clamp(48px, 10vw, 65px);
-  --font-size-xxl: clamp(58px, 10vw, 100px);
+	--font-size-sm: clamp(12px, 1vw, 14px);
+	--font-size-md: clamp(14px, 1.2vw, 18px);
+	--font-size-lg: clamp(18px, 2vw, 24px);
+	--font-size-xl: clamp(48px, 10vw, 65px);
+	--font-size-xxl: clamp(58px, 10vw, 100px);
 
-  --border-radius-40: 40px;
-  --border-radius-15: 15px;
+	--border-radius-40: 40px;
+	--border-radius-15: 15px;
 
-
-  --spacing-unit: 8px;
-  --spacing-xs-8: calc(var(--spacing-unit) * 1);
-  --spacing-sm-16: calc(var(--spacing-unit) * 2);
-  --spacing-md-24: calc(var(--spacing-unit) * 3);
-  --spacing-lg-32: calc(var(--spacing-unit) * 4);
-  --spacing-xl-48: calc(var(--spacing-unit) * 6);
-
+	--spacing-unit: 8px;
+	--spacing-xs-8: calc(var(--spacing-unit) * 1);
+	--spacing-sm-16: calc(var(--spacing-unit) * 2);
+	--spacing-md-24: calc(var(--spacing-unit) * 3);
+	--spacing-lg-32: calc(var(--spacing-unit) * 4);
+	--spacing-xl-48: calc(var(--spacing-unit) * 6);
 }

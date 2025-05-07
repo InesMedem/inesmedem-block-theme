@@ -5,8 +5,8 @@ import Edit from './blocks/hero/edit';
 import save from './blocks/hero/save';
 import metadata from './blocks/hero/block.json';
 
-wp.blocks.registerBlockType( metadata.name, {
+wp.blocks.registerBlockType(metadata.name, {
 	...metadata,
 	Edit,
 	save,
-} );
+});

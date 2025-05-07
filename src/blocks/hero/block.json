@@ -1,9 +1,9 @@
 {
-  "apiVersion": 2,
-  "name": "inesmedem/hero",
-  "title": "Hero Block",
-  "category": "theme",
-  "icon": "cover-image",
-  "editorScript": "theme-blocks",
-  "style": "theme-blocks"
+	"apiVersion": 2,
+	"name": "inesmedem/hero",
+	"title": "Hero Block",
+	"category": "theme",
+	"icon": "cover-image",
+	"editorScript": "theme-blocks",
+	"style": "theme-blocks"
 }

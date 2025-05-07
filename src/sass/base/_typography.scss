@@ -1,21 +1,27 @@
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
 }
 
 .hero_title {
-  font-size: var(--font-size-xxl);
-  font-weight: 400;
-  line-height: 1.2;
+	font-size: var(--font-size-xxl);
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 .big-title {
-  font-size: var(--font-size-xl);
-  font-weight: 400;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+	font-size: var(--font-size-xl);
+	font-weight: 400;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 /* .big-title::before {
@@ -26,39 +32,38 @@ h1, h2, h3, h4, h5, h6, p {
 } */
 
 .sub-title--yellow {
-  color: var(--yellow);
-  font-size: var(--font-size-lg);
+	color: var(--yellow);
+	font-size: var(--font-size-lg);
 }
 
 .sub-title {
-    font-size: var(--font-size-lg);
-    font-weight: 500;
+	font-size: var(--font-size-lg);
+	font-weight: 500;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-} 
+	color: inherit;
+	text-decoration: none;
+}
 
-.link  {
-  color: var(--yellow);
-  text-decoration: underline
+.link {
+	color: var(--yellow);
+	text-decoration: underline;
 }
 
 p {
-  line-height: 1.7;
+	line-height: 1.7;
 }
 
 .yellow {
-  color: var(--yellow);
+	color: var(--yellow);
 }
-
 
 // @font-face {
 //   font-family: "PPTelegraf";font-family
 //   src: url(../../src/sass/base/PPTelegraf-UltraLight.woff2) format("woff2"),
 //        url(../../src/sass/base/PPTelegraf-UltraLight.woff) format("woff");src
-//   font-weight: 200;font-weight 
+//   font-weight: 200;font-weight
 //   font-style: normal;font-style
 // }
 
@@ -66,17 +71,14 @@ p {
 //   font-family: "PPTelegraf";font-family
 //   src: url(../../src/sass/base/PPTelegraf-UltraBold.woff2) format("woff2"),
 //        url(../../src/sass/base/PPTelegraf-UltraBold.woff) format("woff");src
-//   font-weight: 900;font-weight 
+//   font-weight: 900;font-weight
 //   font-style: normal;font-style
 // }
-
 
 // @font-face {
 //   font-family: "PPTelegraf";font-family
 //   src: url(../../src/sass/base/PPTelegraf-Regular.woff2) format("woff2"),
 //        url(../../src/sass/base/PPTelegraf-Regular.woff) format("woff");src
-//   font-weight: 400;font-weight 
+//   font-weight: 400;font-weight
 //   font-style: normal;font-style
 // }
-
-

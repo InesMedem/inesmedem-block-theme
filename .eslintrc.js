@@ -1,4 +1,4 @@
 module.exports = {
-  root: true,
-  extends: ['plugin:@wordpress/eslint-plugin/recommended'],
+	root: true,
+	extends: ['plugin:@wordpress/eslint-plugin/recommended'],
 };
