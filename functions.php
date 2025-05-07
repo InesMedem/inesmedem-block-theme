@@ -10,14 +10,6 @@ function mytheme_enqueue_assets() {
 		[],
 		filemtime( get_template_directory() . '/build/style-index.css' )
 	);
-
-	// wp_enqueue_script(
-	// 'mytheme-scripts',
-	// $asset_path . '/build/index.js',
-	// [],
-	// filemtime( get_template_directory() . '/build/index.js' ),
-	// true
-	// );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_assets' );
 
@@ -44,10 +36,35 @@ function inesmedem_register_theme_blocks() {
 	);
 
 	foreach ( glob( get_template_directory() . '/src/blocks/*/block.json' ) as $block ) {
-		register_block_type( $block );
+		register_block_type(
+			$block,
+			[
+				[
+					'editor_style' => 'theme-blocks',  // Make sure the block styles are applied in the editor
+					'style'        => 'theme-blocks',          // Apply the same styles to the front-end
+				],
+			] 
+		);
 	}
 }
 add_action( 'init', 'inesmedem_register_theme_blocks' );
+
+// * -------------------  function is part of a theme’s setup, ensuring that the theme is compatible 
+// with the block editor and offers a good editing experience, as well as helping ensure 
+// the block styles match the front-end experience.
+// * -------------------
+
+function block_theme_setup() {
+	// Add support for various features
+	// add_theme_support( 'editor-styles' ); 
+	add_theme_support( 'responsive-embeds' );  
+	add_theme_support( 'align-wide' );
+
+	// Enqueue the editor styles
+	add_editor_style( 'editor-style.css' );  
+}
+add_action( 'after_setup_theme', 'block_theme_setup' );
+
 
 
 // * ------------------- UPLOAD SVGS //* -------------------
