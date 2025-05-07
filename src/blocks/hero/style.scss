@@ -19,7 +19,7 @@
 }
 
 .hero_star {
-	height: var(--font-size-xl);
+	height: var(--font-size-xl) !important;
 	margin-bottom: -5px;
 }
 
@@ -32,5 +32,5 @@
 }
 
 .hero_headshot {
-	width: 600px;
+	width: 600px !important;
 }
