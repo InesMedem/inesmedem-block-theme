@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['@wordpress/stylelint-config'],
   rules: {
-    // Add any custom rules here
+    // Add custom overrides here, for example:
+    // 'selector-class-pattern': null,
   },
 };

@@ -4,6 +4,7 @@
     "@wordpress/scripts": "^30.15.0",
     "@wordpress/stylelint-config": "^23.14.0",
     "eslint": "^8.57.1",
+    "prettier": "^3.5.3",
     "stylelint": "^16.19.1",
     "stylelint-scss": "^6.11.1"
   },
@@ -12,6 +13,9 @@
     "build": "wp-scripts build",
     "lint:js": "eslint src --ext .js,.jsx",
     "lint:css": "stylelint 'src/**/*.{css,scss}'",
-    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix"
+    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "prettier": "@wordpress/prettier-config"
+
   }
 }
