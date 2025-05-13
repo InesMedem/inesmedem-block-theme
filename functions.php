@@ -56,7 +56,7 @@ add_action( 'init', 'inesmedem_register_theme_blocks' );
 
 function block_theme_setup() {
 	// Add support for various features
-	// add_theme_support( 'editor-styles' ); 
+	add_theme_support( 'editor-styles' ); 
 	add_theme_support( 'responsive-embeds' );  
 	add_theme_support( 'align-wide' );
 

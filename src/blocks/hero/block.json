@@ -6,5 +6,8 @@
 	"icon": "cover-image",
 	"editorScript": "theme-blocks",
 	"style": "theme-blocks",
-	"script": "theme-blocks"
+	"script": "theme-blocks",
+	"supports": {
+    	"align": true
+	}
 }
