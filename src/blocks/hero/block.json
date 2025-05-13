@@ -9,5 +9,12 @@
 	"script": "theme-blocks",
 	"supports": {
     	"align": true
+	},
+	"attributes": {
+		"heroText": {
+			"type": "string",
+			"source": "html",
+			"selector": ".hero-text"
+		}
 	}
 }

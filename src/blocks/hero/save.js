@@ -7,7 +7,7 @@ export default function save() {
 				<div className="hero_text-wrapper">
 					<h3 className="sub-title--yellow">Welcome dear friend,</h3>
 					<h1 className="hero_title">
-						Web Development Solutions{' '}
+						Web Development Solutions
 						<img
 							className="hero_star"
 							src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
