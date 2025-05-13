@@ -14,9 +14,7 @@
 		"heroText": {
 			"type": "string",
 			"source": "html",
-			"selector": ".hero-text"
+			"selector": ".hero_text"
 		}
-	},
-	"editorScript": "file:./edit.js",
-	"style": "file:./style.scss"
+	}
 }
