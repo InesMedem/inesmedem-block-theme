@@ -1,6 +1,8 @@
-const { useBlockProps } = wp.blockEditor;
+const { useBlockProps, RichText } = wp.blockEditor;
 
-export default function save() {
+export default function save({ attributes }) {
+	const { heroText } = attributes;
+
 	return (
 		<div {...useBlockProps.save()}>
 			<section className="hero">
@@ -11,15 +13,14 @@ export default function save() {
 						<img
 							className="hero_star"
 							src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
-							alt="alt-text"
+							alt="hero_star"
 						/>
 					</h1>
-					<p className="hero_text">
-						Creating responsive, user-friendly websites that elevate
-						your online presence. I help startups, small businesses,
-						and entrepreneurs engage their audience and drive growth
-						with expert web development and design.
-					</p>
+					<RichText.Content
+						tagName="p"
+						className="hero_text"
+						value={heroText}
+					/>
 					<div className="hero_btn">
 						<button>
 							<a href="#">Get in touch</a>
@@ -31,7 +32,7 @@ export default function save() {
 						<img
 							className="hero_headshot hover-image levitate-image"
 							src="http://blocks.test/wp-content/uploads/2025/05/ines-medem-1.png"
-							alt="alt-text"
+							alt="hero_headshot"
 						/>
 					</div>
 				</div>

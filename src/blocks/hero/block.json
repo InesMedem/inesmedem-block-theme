@@ -16,5 +16,7 @@
 			"source": "html",
 			"selector": ".hero-text"
 		}
-	}
+	},
+	"editorScript": "file:./edit.js",
+	"style": "file:./style.scss"
 }

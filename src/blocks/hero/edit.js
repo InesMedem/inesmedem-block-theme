@@ -9,10 +9,11 @@ export default function Edit({ attributes, setAttributes }) {
 				<div className="hero_text-wrapper">
 					<h3 className="sub-title--yellow">Welcome dear friend,</h3>
 					<h1 className="hero_title">
-						Web Development Solutions{' '}
+						Web Development Solutions
 						<img
 							className="hero_star"
 							src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
+							alt="hero_star"
 						/>
 					</h1>
 					<RichText
@@ -37,6 +38,7 @@ export default function Edit({ attributes, setAttributes }) {
 						<img
 							className="hero_headshot hover-image levitate-image"
 							src="http://blocks.test/wp-content/uploads/2025/05/ines-medem-1.png"
+							alt="hero_headshot"
 						/>
 					</div>
 				</div>
