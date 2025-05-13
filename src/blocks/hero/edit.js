@@ -28,9 +28,7 @@ export default function Edit({ attributes, setAttributes }) {
 						)}
 					/>
 					<div className="hero_btn">
-						<button>
-							<a href="#">Get in touch</a>
-						</button>
+						<a className="button" href="#">Get in touch</a>
 					</div>
 				</div>
 				<div className="hero__img-wrapper">
