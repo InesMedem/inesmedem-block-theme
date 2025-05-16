@@ -61,7 +61,7 @@ function block_theme_setup() {
 	add_theme_support( 'align-wide' );
 
 	// Enqueue the editor styles
-	add_editor_style( 'editor-style.css' );  
+	// add_editor_style( 'editor-style.css' );  
 }
 add_action( 'after_setup_theme', 'block_theme_setup' );
 
