@@ -12,6 +12,13 @@ import EditCTA from './blocks/cta/edit';
 import saveCTA from './blocks/cta/save';
 import metadataCTA from './blocks/cta/block.json';
 
+// Team block
+
+import './blocks/team-members/style.scss';
+import EditTeamMembers from './blocks/team-members/edit';
+import saveTeamMembers from './blocks/team-members/save';
+import metadataTeamMembers from './blocks/team-members/block.json';
+
 // Register blocks
 wp.blocks.registerBlockType(metadataHero.name, {
 	...metadataHero,
@@ -23,4 +30,10 @@ wp.blocks.registerBlockType(metadataCTA.name, {
 	...metadataCTA,
 	edit: EditCTA,
 	save: saveCTA,
+});
+
+wp.blocks.registerBlockType(metadataTeamMembers.name, {
+	...metadataTeamMembers,
+	edit: EditTeamMembers,
+	save: saveTeamMembers,
 });
