@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/team-member",
+	"version": "0.1.0",
+	"title": "Team Member",
+	"category": "widgets",
+	"icon": "smiley",
+	"parent":["create-block/team-members"], 
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	}
+}
