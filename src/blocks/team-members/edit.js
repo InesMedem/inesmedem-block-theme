@@ -23,7 +23,7 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				<PanelBody>
 					<RangeControl
-						label={__('Columns', 'team-members')}
+						label={__('Columns', 'team-member')}
 						min={1}
 						max={6}
 						onChange={onChangeColumns}

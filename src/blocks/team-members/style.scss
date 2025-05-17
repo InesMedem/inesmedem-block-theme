@@ -1,12 +1,13 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+// block-editor-block-list__block wp-block has-3-columns
 
 .wp-block-create-block-team-members {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	display: flex;
+	flex-wrap: wrap;
+	@for $i from 1 through 6 {
+		&.has-#{$i}-columns {
+			.wp-block-create-block-team-member {
+				width: calc(100% / #{$i});
+			}
+		}
+	}
 }
