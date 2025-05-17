@@ -6,16 +6,16 @@
 	"title": "Team Member",
 	"category": "widgets",
 	"icon": "smiley",
-	"parent":["create-block/team-members"], 
+	"parent": ["create-block/team-members"],
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
 	"supports": {
 		"html": false
 	},
-	"attributes": { 
+	"attributes": {
 		"name": {
 			"type": "string",
-			"source": "html", 
+			"source": "html",
 			"selector": "h4"
 		},
 		"bio": {

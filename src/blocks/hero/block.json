@@ -8,7 +8,7 @@
 	"style": "theme-blocks",
 	"script": "theme-blocks",
 	"supports": {
-    	"align": true
+		"align": true
 	},
 	"attributes": {
 		"heroText": {

@@ -3,15 +3,15 @@
 } */
 
 p {
-    color: red !important;
+	color: red !important;
 }
 
 .editor-styles-wrapper .block-editor-writing-flow {
 	padding: 20px 0;
 	max-width: 1300px;
 	margin: 0 auto;
-    background-color: red;
-    text: sans-serif;
+	background-color: red;
+	text: sans-serif;
 }
 
 /* h1,

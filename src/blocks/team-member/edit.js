@@ -2,30 +2,30 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps, RichText } from '@wordpress/block-editor';
 import './editor.scss';
 
-export default function Edit({attributes, setAttributes }) {
+export default function Edit({ attributes, setAttributes }) {
 	const { name, bio } = attributes;
 
-	const onChangeName = (newName ) => {
-		setAttributes( { name: newName})
-	}
+	const onChangeName = (newName) => {
+		setAttributes({ name: newName });
+	};
 
-	const onChangeBio = (newBio ) => {
-		setAttributes( { bio: newBio})
-	}
+	const onChangeBio = (newBio) => {
+		setAttributes({ bio: newBio });
+	};
 
 	return (
-		<div { ...useBlockProps() }>
-			<RichText 
+		<div {...useBlockProps()}>
+			<RichText
 				placeholder={__('Member Name', 'team-member')}
 				tagName="h4"
 				onChange={onChangeName}
-				value={ name }
+				value={name}
 			/>
-			<RichText 
+			<RichText
 				placeholder={__('Member Bio', 'team-member')}
 				tagName="p"
-				onChange={ onChangeBio }
-				value={ bio }
+				onChange={onChangeBio}
+				value={bio}
 			/>
 		</div>
 	);
