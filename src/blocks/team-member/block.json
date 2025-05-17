@@ -11,5 +11,17 @@
 	"example": {},
 	"supports": {
 		"html": false
+	},
+	"attributes": { 
+		"name": {
+			"type": "string",
+			"source": "html", 
+			"selector": "h4"
+		},
+		"bio": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
 	}
 }
