@@ -10,5 +10,11 @@
 	"example": {},
 	"supports": {
 		"html": false
+	},
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
 	}
 }
