@@ -1,12 +1,12 @@
 {
 	"apiVersion": 2,
-	"name": "inesmedem/hero",
+	"name": "ines/hero",
 	"title": "Hero Block",
 	"category": "theme",
 	"icon": "cover-image",
-	"editorScript": "theme-blocks",
-	"style": "theme-blocks",
-	"script": "theme-blocks",
+	"editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
 	"supports": {
 		"align": true
 	},
