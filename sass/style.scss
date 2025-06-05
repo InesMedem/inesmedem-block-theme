@@ -1,0 +1,14 @@
+// 1. Base
+@use "base/variables";
+@use "base/base";
+@use "base/typography";
+@use "base/animations";
+// 3. Blocks
+@use "blocks/portfolio-slider";
+@use "blocks/destinations-grid";
+// 2. Components
+@use "components/nav";
+@use "components/theme-switcher";
+// 4. Global
+@use "global/footer";
+@use "global/header";

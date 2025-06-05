@@ -6,6 +6,7 @@
 		"eslint": "^8.57.1",
 		"eslint-config-prettier": "^10.1.2",
 		"prettier": "^3.5.3",
+		"sass": "^1.89.1",
 		"stylelint": "^16.19.1",
 		"stylelint-scss": "^6.11.1"
 	},
@@ -16,7 +17,9 @@
 		"lint:css": "stylelint 'src/**/*.{css,scss}'",
 		"lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
 		"lint": "npm run lint:js && npm run lint:css",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"sass": "sass sass/style.scss style.css --no-source-map",
+  		"watch:sass": "sass sass/style.scss style.css --watch"
 	},
 	"prettier": "@wordpress/prettier-config",
 	"stylelint": {
