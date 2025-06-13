@@ -1,9 +1,16 @@
 /**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
+ * SINGLE TEAM MEMBER
  */
 
-.wp-block-create-block-team-member {
+
+
+.wp-block-ines-team-member {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	border: 1px dotted #f00;
+	background-color: pink;
+
+
+
 }

@@ -1,3 +1,54 @@
-.wp-block-create-block-team-member {
-	display: flex;
+/**
+ *  TEAM MEMBERS COLLECTIVE BLOCK 
+ */
+
+.wp-block-ines-team-members {
+
+	background-color: lime;
+	padding: 2px;
+	display: block;
+
+	@for $i from 1 through 6 {
+		&.has-#{$i}-columns {
+
+			> .block-editor-inner-blocks 
+			> .block-editor-block-list__layout 
+			> [data-type="ines/team-member"]  
+			
+			{
+				width: calc(100% / #{$i})
+			}
+		}
+	}
+
+
+
+	> .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display: flex;
+		flex-wrap: wrap;
+		// margin-left: -10px;
+		// margin-right: -10px;
+		background-color: aqua;
+
+		
+		[data-type="ines/team-member"] {
+			// max-width: none;
+			// margin: 0;
+		}
+
+		> [data-type="ines/team-member"] {
+			margin: 10px;
+
+			h4 {
+				color: blue
+			}
+
+			p {
+				color: blue;
+			}
+		}
+	}
 }
+
+
+

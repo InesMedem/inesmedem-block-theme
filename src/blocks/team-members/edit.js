@@ -33,11 +33,12 @@ export default function Edit({ attributes, setAttributes }) {
 			</InspectorControls>
 
 			<InnerBlocks
-				allowedBlocks={['create-block/team-member']}
+				allowedBlocks={['ines/team-member']}
+				orientation='horizontal'
 				template={[
-					['create-block/team-member'],
-					['create-block/team-member'],
-					['create-block/team-member'],
+					['ines/team-member'],
+					['ines/team-member'],
+					['ines/team-member'],
 				]}
 			/>
 		</div>
