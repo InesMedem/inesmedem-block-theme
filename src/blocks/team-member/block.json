@@ -25,6 +25,22 @@
 			"type": "string",
 			"source": "html",
 			"selector": "p"
+		},
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"selector": "img",
+			"source": "attribute",
+			"defalut": ""
+
+		},
+		"url": {
+			"type": "string",
+			"selector": "img", 
+			"attribute": "src",
+			"source": "attribute"
 		}
 	}
 }
