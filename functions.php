@@ -1,6 +1,6 @@
 <?php
 
-// * GLOBAL STYLES 
+// * ------------------- GLOBAL STYLES //* -------------------
 function mytheme_enqueue_styles() {
 	wp_enqueue_style(
 		'mytheme-style',
@@ -10,15 +10,16 @@ function mytheme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_styles' );
 
-// * BLOCK REGISTRATION 
+// * ------------------- BLOCK REGISTRATION //* -------------------
 function my_theme_register_blocks() {
 	register_block_type( block_type: get_template_directory() . '/build/blocks/my-block' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/hero' );
+	register_block_type( block_type: get_template_directory() . '/build/blocks/team-member' );
+	register_block_type( block_type: get_template_directory() . '/build/blocks/team-members' );
 }
 add_action( 'init', 'my_theme_register_blocks' );
 
-// * -------------------  function is part of a theme’s setup, ensuring that the theme is compatible 
-// * -------------------
+// * ------------------- function is part of a theme’s setup, ensuring that the theme is compatible  //* -------------------
 
 function block_theme_setup() {
 	add_theme_support( 'editor-styles' ); 

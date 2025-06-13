@@ -9,6 +9,9 @@
 	"parent": ["create-block/team-members"],
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
+	"editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
 	"supports": {
 		"html": false
 	},
