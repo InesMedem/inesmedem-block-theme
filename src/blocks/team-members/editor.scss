@@ -3,25 +3,19 @@
  */
 
 .wp-block-ines-team-members {
-
 	background-color: lime;
 	padding: 2px;
 	display: block;
 
 	@for $i from 1 through 6 {
 		&.has-#{$i}-columns {
-
-			> .block-editor-inner-blocks 
-			> .block-editor-block-list__layout 
-			> [data-type="ines/team-member"]  
-			
-			{
-				width: calc(100% / #{$i})
+			> .block-editor-inner-blocks
+				> .block-editor-block-list__layout
+				> [data-type="ines/team-member"] {
+				width: calc(100% / #{$i});
 			}
 		}
 	}
-
-
 
 	> .block-editor-inner-blocks > .block-editor-block-list__layout {
 		display: flex;
@@ -30,7 +24,6 @@
 		// margin-right: -10px;
 		background-color: aqua;
 
-		
 		[data-type="ines/team-member"] {
 			// max-width: none;
 			// margin: 0;
@@ -42,7 +35,6 @@
 			h4 {
 				color: blue;
 				width: 100%;
-			
 			}
 
 			p {
@@ -52,6 +44,3 @@
 		}
 	}
 }
-
-
-

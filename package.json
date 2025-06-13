@@ -19,10 +19,13 @@
 		"lint": "npm run lint:js && npm run lint:css",
 		"format": "prettier --write .",
 		"sass": "sass sass/style.scss style.css --no-source-map",
-  		"watch:sass": "sass sass/style.scss style.css --watch"
+		"watch:sass": "sass sass/style.scss style.css --watch"
 	},
 	"prettier": "@wordpress/prettier-config",
 	"stylelint": {
 		"extends": "@wordpress/stylelint-config/scss"
+	},
+	"dependencies": {
+		"@wordpress/blob": "^4.25.0"
 	}
 }

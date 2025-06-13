@@ -10,8 +10,8 @@
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
 	"editorScript": "file:./index.js",
-    "editorStyle": "file:./index.css",
-    "style": "file:./style-index.css",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
 	"supports": {
 		"html": false
 	},
@@ -34,11 +34,10 @@
 			"selector": "img",
 			"source": "attribute",
 			"defalut": ""
-
 		},
 		"url": {
 			"type": "string",
-			"selector": "img", 
+			"selector": "img",
 			"attribute": "src",
 			"source": "attribute"
 		}
