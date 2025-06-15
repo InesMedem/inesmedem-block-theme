@@ -1,0 +1,28 @@
+
+.hero_btn {
+	padding: 12px 20px;
+	font-size: medium;
+	font-family: PPTelegraf, Arial, sans-serif;
+	background-color: var(--yellow);
+	border-radius: var(--border-radius-40);
+	text-transform: uppercase;
+	font-weight: 400;
+	color: white;
+	border: none;
+}
+
+.is-root-container  > .wp-block {
+    background-color: pink;
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: var(--white);
+	align-items: center;
+	padding: none !important;
+	border: 2px solid var(--notion-dark);
+	border-radius: var(--border-radius-15);
+	position: relative;
+}

@@ -11,9 +11,9 @@ export default function Edit({ attributes, setAttributes }) {
 					<h1 className="hero_title">
 						Web Development Solutions
 						<img
-							className="hero_star"
-							src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
-							alt="hero_star"
+							// className="hero_star"
+							// src="http://blocks.test/wp-content/uploads/2024/05/Vector.svg"
+							// alt="hero_star"
 						/>
 					</h1>
 					<RichText
