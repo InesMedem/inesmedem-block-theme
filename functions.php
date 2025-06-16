@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_styles' );
 
 // * ------------------- BLOCK REGISTRATION //* -------------------
 function my_theme_register_blocks() {
-	register_block_type( block_type: get_template_directory() . '/build/blocks/my-block' );
+	register_block_type( block_type: get_template_directory() . '/build/blocks/grid-card' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/hero' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/cta' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/team-member' );
