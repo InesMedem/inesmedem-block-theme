@@ -1,11 +1,8 @@
-
 .wp-block-post-template {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2rem;
-  }
-  
-
+}
 
 .destinations-grid_text {
 	display: flex;

@@ -9,7 +9,7 @@
 	
 	<div class="grid-card__img">
 		<?php if ( has_post_thumbnail() ) : ?>
-		<img src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="<?php the_title_attribute(); ?>">
+		<img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title_attribute(); ?>">
 		<?php endif; ?>
 	</div>
 
