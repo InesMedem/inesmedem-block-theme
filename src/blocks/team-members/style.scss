@@ -1,11 +1,11 @@
 // block-editor-block-list__block wp-block has-3-columns
 
-.wp-block-create-block-team-members {
+.wp-block-ines-team-members {
 	display: flex;
 	flex-wrap: wrap;
 	@for $i from 1 through 6 {
 		&.has-#{$i}-columns {
-			.wp-block-create-block-team-member {
+			.wp-block-ines-team-member {
 				width: calc(100% / #{$i});
 			}
 		}

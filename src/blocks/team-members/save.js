@@ -1,7 +1,6 @@
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
-	console.log('Save attributes:', attributes); // Add this line
 
 	const { columns } = attributes;
 
