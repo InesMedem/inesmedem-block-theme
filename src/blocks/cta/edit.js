@@ -4,7 +4,6 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
-	console.log('🚀 ~ Edit ~ attributes:', attributes);
 	const { text } = attributes;
 	return (
 		<RichText
