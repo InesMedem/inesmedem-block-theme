@@ -33,7 +33,8 @@
 			"type": "string",
 			"selector": "img",
 			"source": "attribute",
-			"defalut": ""
+			"defalut": "",
+			"attribute": "alt"
 		},
 		"url": {
 			"type": "string",

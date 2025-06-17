@@ -72,7 +72,7 @@ get_header();
 	</div>
 </section>
 
-<section class="blog-grid">
+<!-- <section class="blog-grid">
 <div class="grid-card__wrapper">
 
 	<?php
@@ -95,7 +95,7 @@ get_header();
 		?>
 
 </div>
-</section>
+</section> -->
 
 
 </main>
