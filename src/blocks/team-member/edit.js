@@ -5,11 +5,17 @@ import {
 	MediaPlaceholder,
 	BlockControls,
 	MediaReplaceFlow,
-	InspectorControls
+	InspectorControls,
 } from '@wordpress/block-editor';
 import './editor.scss';
 import { isBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { Spinner, ToolbarButton, withNotices, PanelBody, TextareaControl } from '@wordpress/components';
+import {
+	Spinner,
+	ToolbarButton,
+	withNotices,
+	PanelBody,
+	TextareaControl,
+} from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 
 export function Edit({
@@ -78,20 +84,21 @@ export function Edit({
 
 	return (
 		<>
-	{url && !isBlobURL(url) && (<InspectorControls>
-		<PanelBody title={__("Image Settings", "ines")}>
-		<TextareaControl 
-			label={__("alt text", "ines")}
-			value={alt}
-			onChange={onChangeAlt}
-			help={__("this is alt text for accesibility pruposes", "ines")}
-			
-			>
-
-		</TextareaControl>
-			
-		</PanelBody>
-	</InspectorControls>)}
+			{url && !isBlobURL(url) && (
+				<InspectorControls>
+					<PanelBody title={__('Image Settings', 'ines')}>
+						<TextareaControl
+							label={__('alt text', 'ines')}
+							value={alt}
+							onChange={onChangeAlt}
+							help={__(
+								'this is alt text for accesibility pruposes',
+								'ines'
+							)}
+						></TextareaControl>
+					</PanelBody>
+				</InspectorControls>
+			)}
 
 			{url && (
 				<BlockControls group="inline">
