@@ -26,6 +26,7 @@
 		"extends": "@wordpress/stylelint-config/scss"
 	},
 	"dependencies": {
-		"@wordpress/blob": "^4.25.0"
+		"@wordpress/blob": "^4.25.0",
+		"@wordpress/element": "^6.25.0"
 	}
 }
