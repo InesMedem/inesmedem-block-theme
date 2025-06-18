@@ -5,10 +5,11 @@ import {
 	MediaPlaceholder,
 	BlockControls,
 	MediaReplaceFlow,
+	InspectorControls
 } from '@wordpress/block-editor';
 import './editor.scss';
 import { isBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { Spinner, ToolbarButton, withNotices } from '@wordpress/components';
+import { Spinner, ToolbarButton, withNotices, PanelBody, TextareaControl } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 
 export function Edit({
@@ -53,6 +54,10 @@ export function Edit({
 		});
 	};
 
+	const onChangeAlt = (newAlt) => {
+		setAttributes({ alt: newAlt });
+	};
+
 	useEffect(() => {
 		if (!id && isBlobURL(url)) {
 			setAttributes({
@@ -73,6 +78,21 @@ export function Edit({
 
 	return (
 		<>
+	{url && !isBlobURL(url) && (<InspectorControls>
+		<PanelBody title={__("Image Settings", "ines")}>
+		<TextareaControl 
+			label={__("alt text", "ines")}
+			value={alt}
+			onChange={onChangeAlt}
+			help={__("this is alt text for accesibility pruposes", "ines")}
+			
+			>
+
+		</TextareaControl>
+			
+		</PanelBody>
+	</InspectorControls>)}
+
 			{url && (
 				<BlockControls group="inline">
 					<MediaReplaceFlow
