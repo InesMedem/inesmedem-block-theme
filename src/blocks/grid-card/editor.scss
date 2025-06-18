@@ -4,14 +4,13 @@
  * Replace them with your own styles or remove the file completely.
  */
 
- .post-4524 {
-    background-color: #fa8900 !important;
- }
+.post-4524 {
+	background-color: #fa8900 !important;
+}
 
 //  wp-block-post post-4524 portfolio type-portfolio status-publish hentry block-editor-block-preview__live-content components-disabled
 
-
- .wp-block-post-template {
+.wp-block-post-template {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2rem;

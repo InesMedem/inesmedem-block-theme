@@ -4,16 +4,21 @@ import {
 	RichText,
 	MediaPlaceholder,
 	BlockControls,
-	MediaReplaceFlow
+	MediaReplaceFlow,
 } from '@wordpress/block-editor';
 import './editor.scss';
 import { isBlobURL, revokeBlobURL } from '@wordpress/blob';
-import { Spinner, withNotices } from '@wordpress/components';
+import { Spinner, ToolbarButton, withNotices } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 
-export function Edit({ attributes, setAttributes, noticeOperations, noticeUI }) {
+export function Edit({
+	attributes,
+	setAttributes,
+	noticeOperations,
+	noticeUI,
+}) {
 	const { name, bio, url, alt } = attributes;
-	const [ blobURL , setBlobURL ] = useState();
+	const [blobURL, setBlobURL] = useState();
 
 	const onChangeName = (newName) => {
 		setAttributes({ name: newName });
@@ -40,73 +45,88 @@ export function Edit({ attributes, setAttributes, noticeOperations, noticeUI }) 
 		noticeOperations.createErrorNotice(message);
 	};
 
+	const removeImage = () => {
+		setAttributes({
+			url: undefined,
+			id: undefined,
+			alt: '',
+		});
+	};
+
 	useEffect(() => {
-		if(!id && isBlobURL(url)) {
+		if (!id && isBlobURL(url)) {
 			setAttributes({
 				url: undefined,
 				alt: '',
-			})
+			});
 		}
-	}, [])
+	}, []);
 
-	useEffect(()=> {
-		if(isBlobURL(url)) {
+	useEffect(() => {
+		if (isBlobURL(url)) {
 			setBlobURL(url);
 		} else {
-			revokeBlobURL( blobURL );
+			revokeBlobURL(blobURL);
 			setBlobURL();
 		}
-	}, [url])
+	}, [url]);
 
 	return (
-		< >
-		<BlockControls group="inline">
-			<MediaReplaceFlow
-				name={__("Replace Image" , "ines")}
-				onSelect={onSelectImage}
-				onSelectURL={(val) => console.log(val)}
-				onError={(err) => console.log(err)}
-				accept="image/*"
-				allowedTypes={['image']}
-				mediaId={ id }
-				mediaURL={ url }
-			/>
-		</BlockControls>
-		<div {...useBlockProps()}>
+		<>
 			{url && (
-				<div
-					className={`wp-content-ines-team-member-img${
-						isBlobURL(url) ? ' is-loading' : ''
-					}`}
-				>
-					<img src={url} alt={alt} />
-					{isBlobURL(url) && <Spinner />}
-				</div>
+				<BlockControls group="inline">
+					<MediaReplaceFlow
+						name={__('Replace Image', 'ines')}
+						onSelect={onSelectImage}
+						onSelectURL={(val) => console.log(val)}
+						onError={(err) => console.log(err)}
+						accept="image/*"
+						allowedTypes={['image']}
+						mediaId={id}
+						mediaURL={url}
+					/>
+					<ToolbarButton onClick={removeImage}>
+						{' '}
+						{__('Remove Image')}{' '}
+					</ToolbarButton>
+				</BlockControls>
 			)}
 
-			<MediaPlaceholder
-				icon="admin-users"
-				onSelect={onSelectImage}
-				onSelectURL={(val) => console.log(val)}
-				onError={(err) => console.log(err)}
-				accept="image/*"
-				allowedTypes={['image']}
-				disableMediaButtons={url}
-				notices={noticeUI}
-			/>
-			<RichText
-				placeholder={__('Member Name', 'team-member')}
-				tagName="h4"
-				onChange={onChangeName}
-				value={name}
-			/>
-			<RichText
-				placeholder={__('Member Bio', 'team-member')}
-				tagName="p"
-				onChange={onChangeBio}
-				value={bio}
-			/>
-		</div>
+			<div {...useBlockProps()}>
+				{url && (
+					<div
+						className={`wp-content-ines-team-member-img${
+							isBlobURL(url) ? ' is-loading' : ''
+						}`}
+					>
+						<img src={url} alt={alt} />
+						{isBlobURL(url) && <Spinner />}
+					</div>
+				)}
+
+				<MediaPlaceholder
+					icon="admin-users"
+					onSelect={onSelectImage}
+					onSelectURL={(val) => console.log(val)}
+					onError={(err) => console.log(err)}
+					accept="image/*"
+					allowedTypes={['image']}
+					disableMediaButtons={url}
+					notices={noticeUI}
+				/>
+				<RichText
+					placeholder={__('Member Name', 'team-member')}
+					tagName="h4"
+					onChange={onChangeName}
+					value={name}
+				/>
+				<RichText
+					placeholder={__('Member Bio', 'team-member')}
+					tagName="p"
+					onChange={onChangeBio}
+					value={bio}
+				/>
+			</div>
 		</>
 	);
 }
