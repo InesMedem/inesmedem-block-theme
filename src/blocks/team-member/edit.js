@@ -3,6 +3,8 @@ import {
 	useBlockProps,
 	RichText,
 	MediaPlaceholder,
+	BlockControls,
+	MediaReplaceFlow
 } from '@wordpress/block-editor';
 import './editor.scss';
 import { isBlobURL, revokeBlobURL } from '@wordpress/blob';
@@ -57,6 +59,19 @@ export function Edit({ attributes, setAttributes, noticeOperations, noticeUI }) 
 	}, [url])
 
 	return (
+		< >
+		<BlockControls group="inline">
+			<MediaReplaceFlow
+				name={__("Replace Image" , "ines")}
+				onSelect={onSelectImage}
+				onSelectURL={(val) => console.log(val)}
+				onError={(err) => console.log(err)}
+				accept="image/*"
+				allowedTypes={['image']}
+				mediaId={ id }
+				mediaURL={ url }
+			/>
+		</BlockControls>
 		<div {...useBlockProps()}>
 			{url && (
 				<div
@@ -92,6 +107,7 @@ export function Edit({ attributes, setAttributes, noticeOperations, noticeUI }) 
 				value={bio}
 			/>
 		</div>
+		</>
 	);
 }
 
