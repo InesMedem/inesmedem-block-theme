@@ -19,5 +19,22 @@
 			"type": "number",
 			"default": 3
 		}
+	},
+	"example": {
+		"attributes": {
+			"columns": 2
+		},
+	"innerBlocks": [
+		{ 
+			"name": "ines/team-member",
+			"attributes": {
+				"name": "Jhon Doe",
+				"bio": "Made up story of thei life ",
+				"url": "https://picsum.photos/id/1012/200/300"
+			}
+
+		}
+	]
+
 	}
 }
