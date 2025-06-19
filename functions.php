@@ -17,6 +17,7 @@ function my_theme_register_blocks() {
 	register_block_type( block_type: get_template_directory() . '/build/blocks/cta' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/team-member' );
 	register_block_type( block_type: get_template_directory() . '/build/blocks/team-members' );
+	register_block_type( block_type: get_template_directory() . '/build/blocks/latest-posts-loop' );
 }
 add_action( 'init', 'my_theme_register_blocks' );
 
