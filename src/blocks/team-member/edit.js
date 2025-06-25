@@ -6,15 +6,18 @@ import {
 	BlockControls,
 	MediaReplaceFlow,
 	InspectorControls,
+	store as blockEditorStore,
 } from '@wordpress/block-editor';
 import './editor.scss';
 import { isBlobURL, revokeBlobURL } from '@wordpress/blob';
+import { useSelect } from '@wordpress/data';
 import {
 	Spinner,
 	ToolbarButton,
 	withNotices,
 	PanelBody,
 	TextareaControl,
+	SelectControl,
 } from '@wordpress/components';
 import { useEffect, useState } from '@wordpress/element';
 
@@ -26,6 +29,39 @@ export function Edit({
 }) {
 	const { name, bio, url, alt } = attributes;
 	const [blobURL, setBlobURL] = useState();
+
+	const imageObject = useSelect(
+		(select) => {
+			const { getMedia } = select('core');
+			return id ? getMedia(id) : null;
+		},
+		[id]
+	);
+
+	const imageSizes = useSelect((select) => {
+		return select(blockEditorStore).getSettings().imageSizes;
+	}, []);
+
+	const getImageSizeOptions = () => {
+		if (!imageObject) return [];
+		const options = [];
+		const sizes = imageObject.media_details.sizes;
+		for (const key in size) {
+			const size = sizes[key];
+			const imageSize = imageSizes.find((s) => s.slug === key);
+			if (imageSize) {
+				options.push({
+					label: imageSize.name,
+					value: size.source_url,
+				});
+			}
+		}
+		return options;
+	};
+
+	const onChangeImageSize = (newURL) => {
+		setAttributes({ url: newUrl})
+	}
 
 	const onChangeName = (newName) => {
 		setAttributes({ name: newName });
@@ -87,6 +123,14 @@ export function Edit({
 			{url && !isBlobURL(url) && (
 				<InspectorControls>
 					<PanelBody title={__('Image Settings', 'ines')}>
+						{id && (
+							<SelectControl
+								label={__('Image Size', 'ines')}
+								options={ getImageSizeOptions() }
+								value={url}
+								onChange={ onChangeImageSize }
+							/>
+						)}
 						<TextareaControl
 							label={__('alt text', 'ines')}
 							value={alt}

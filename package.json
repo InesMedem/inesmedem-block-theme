@@ -27,6 +27,7 @@
 	},
 	"dependencies": {
 		"@wordpress/blob": "^4.25.0",
+		"@wordpress/data": "^10.25.0",
 		"@wordpress/element": "^6.25.0"
 	}
 }
