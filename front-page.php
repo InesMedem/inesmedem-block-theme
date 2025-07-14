@@ -24,27 +24,7 @@ get_header();
 	</section> -->
 
 <section class="destinations-grid">
-	<div class="destinations-grid_text">
-		<h3 class="big-title"> 
-			<img class="hero-star" src="<?php echo wp_get_attachment_url( 4925 ); ?>"> Digital Nomad  
-		</h3>
-		<p class="hero-text">Creating responsive, user-friendly websites that elevate your online presence. </p>
-		<div><button>click here </button></div>
-	</div>        
 
-	<div class="grid">
-		<?php echo wp_get_attachment_image( 5229, 'full', false, [ 'alt' => 'Salvador' ] ); ?>
-		<?php echo wp_get_attachment_image( 5227, 'full', false, [ 'alt' => 'Mexico' ] ); ?>
-		<?php echo wp_get_attachment_image( 5224, 'full', false, [ 'alt' => 'Bali' ] ); ?>
-		<?php echo wp_get_attachment_image( 5228, 'full', false, [ 'alt' => 'Nicaragua' ] ); ?>
-	</div>
-	
-	<img src="/assets/madrid.png">
-
-	<div class="grid">
-	<?php echo wp_get_attachment_image( attachment_id: 5225, 'full', false, [ 'alt' => 'Berlin' ] ); ?>
-	<?php echo wp_get_attachment_image( 5230, 'full', false, [ 'alt' => 'Sydney' ] ); ?>
-	</div>
 
 	
 </section>
