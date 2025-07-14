@@ -23,7 +23,7 @@ get_header();
 		</div>
 	</section> -->
 
-<!-- <section class="destinations-grid">
+<section class="destinations-grid">
 	<div class="destinations-grid_text">
 		<h3 class="big-title"> 
 			<img class="hero-star" src="<?php echo wp_get_attachment_url( 4925 ); ?>"> Digital Nomad  
@@ -47,7 +47,7 @@ get_header();
 	</div>
 
 	
-</section> -->
+</section>
 
 <section class="portfolio-carousel">
 	<div class="portfolio-slider">
