@@ -33,17 +33,17 @@ get_header();
 	</div>        
 
 	<div class="grid">
-		<img src="/assets/salvador.png">
-		<img src="/assets/mexico.png">
-		<img src="/assets/bali.png">    
-		<img src="/assets/nicaragua.png">
+		<?php echo wp_get_attachment_image( 5229, 'full', false, [ 'alt' => 'Salvador' ] ); ?>
+		<?php echo wp_get_attachment_image( 5227, 'full', false, [ 'alt' => 'Mexico' ] ); ?>
+		<?php echo wp_get_attachment_image( 5224, 'full', false, [ 'alt' => 'Bali' ] ); ?>
+		<?php echo wp_get_attachment_image( 5228, 'full', false, [ 'alt' => 'Nicaragua' ] ); ?>
 	</div>
 	
 	<img src="/assets/madrid.png">
 
 	<div class="grid">
-		<img src="/assets/berlin.png">
-		<img src="/assets/sydney.png">
+	<?php echo wp_get_attachment_image( attachment_id: 5225, 'full', false, [ 'alt' => 'Berlin' ] ); ?>
+	<?php echo wp_get_attachment_image( 5230, 'full', false, [ 'alt' => 'Sydney' ] ); ?>
 	</div>
 
 	
