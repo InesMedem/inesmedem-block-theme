@@ -1,10 +1,6 @@
 {
   "version": 2,
   "settings": {
-    "layout": {
-      "contentSize": "800px",
-      "wideSize": "1200px"
-    },
     "spacing": {
       "padding": true,
       "margin": true,
