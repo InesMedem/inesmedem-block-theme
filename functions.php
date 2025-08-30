@@ -27,6 +27,10 @@ function block_theme_setup() {
 	add_theme_support( 'editor-styles' ); 
 	add_theme_support( 'responsive-embeds' );  
 	add_theme_support( 'align-wide' );
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'wp-block-layout' );
+	add_theme_support( 'spacing' );
+
 }
 add_action( 'after_setup_theme', 'block_theme_setup' );
 
@@ -38,3 +42,4 @@ function enable_svg_uploads( $mimes ) {
 	return $mimes;
 }
 add_filter( 'upload_mimes', 'enable_svg_uploads' );
+

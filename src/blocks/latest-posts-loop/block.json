@@ -19,6 +19,6 @@
 	"viewScript": "file:./view.js",
 	"attributes": {
 		"numberOfPosts": "number",
-		"default": 5,
+		"default": 5
 	}
 }
