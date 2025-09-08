@@ -4,19 +4,6 @@
   --notion: #fafafa;
   --notion-dark: #f2f2f0;
   --white: white;
-  --font-size-sm: clamp(12px, 1vw, 14px);
-  --font-size-md: clamp(14px, 1.2vw, 18px);
-  --font-size-lg: clamp(18px, 2vw, 24px);
-  --font-size-xl: clamp(48px, 10vw, 65px);
-  --font-size-xxl: clamp(58px, 10vw, 100px);
-  --border-radius-40: 40px;
-  --border-radius-15: 15px;
-  --spacing-unit: 8px;
-  --spacing-xs-8: calc(var(--spacing-unit) * 1);
-  --spacing-sm-16: calc(var(--spacing-unit) * 2);
-  --spacing-md-24: calc(var(--spacing-unit) * 3);
-  --spacing-lg-32: calc(var(--spacing-unit) * 4);
-  --spacing-xl-48: calc(var(--spacing-unit) * 6);
 }
 
 /** GENERAL  **/
@@ -222,6 +209,14 @@ p {
   --white: #363636;
 }
 
+/* .darkmode {
+  --wp--preset--color--yellow: #fa8900;
+  --wp--preset--color--charcoal: #ffffff;
+  --wp--preset--color--notion: #000000;
+  --wp--preset--color--notion-dark: #363636;
+  --wp--preset--color--white: #363636;
+} */
+
 .circle {
   width: 30px;
   height: 30px;
@@ -259,7 +254,7 @@ p {
 }
 
 /* FOOTER  */
-.footer {
+/* .footer {
   background-color: var(--white);
   justify-content: space-between;
   align-items: center;
@@ -329,6 +324,6 @@ p {
     flex-direction: column;
     padding: 0;
   }
-}
+} */
 
 /* styles get only applied so long as the screen is at least 900px */

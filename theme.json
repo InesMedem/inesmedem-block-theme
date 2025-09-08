@@ -5,7 +5,84 @@
       "padding": true,
       "margin": true,
       "blockGap": true,
-      "units": [ "px", "em", "rem", "%" ]
+      "units": ["px", "em", "rem", "%"]
+    },
+        "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1200px"
+    },
+    "blocks": {
+      "core/query-pagination": {},
+      "core/pagination": {}
+    },
+    "color": {
+      "palette": [
+        { "name": "Yellow", "slug": "yellow", "color": "#fca12f" },
+        { "name": "Charcoal", "slug": "charcoal", "color": "#363636" },
+        { "name": "Notion", "slug": "notion", "color": "#fafafa" },
+        { "name": "Notion Dark", "slug": "notion-dark", "color": "#f2f2f0" },
+        { "name": "White", "slug": "white", "color": "#ffffff" }
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "Helvetica, Arial, sans-serif",
+          "name": "Helvetica",
+          "slug": "helvetica"
+        },
+        {
+          "fontFamily": "'Times New Roman', serif",
+          "name": "Times New Roman",
+          "slug": "times-new-roman"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "slug": "small", "size": "14px" },
+        { "name": "Normal", "slug": "normal", "size": "16px" },
+        { "name": "Large", "slug": "large", "size": "24px" },
+        { "name": "Huge", "slug": "huge", "size": "36px" }
+      ]
     }
-  }
+  },
+  "styles": {
+    "elements": {
+      "button": {
+        "spacing": {
+          "padding": {
+            "top": "12px",
+            "bottom": "12px",
+            "left": "20px",
+            "right": "20px"
+          }
+        },
+        "typography": {
+          "fontFamily": "PPTelegraf, Arial, sans-serif",
+          "textTransform": "uppercase",
+          "fontWeight": "400"
+        },
+        "color": {
+          "text": "#ffffff",
+          "background": "#fca12f"
+        },
+        "border": {
+          "radius": "40px",
+          "width": "0"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
 }

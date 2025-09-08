@@ -24,12 +24,15 @@ add_action( 'init', 'my_theme_register_blocks' );
 // * ------------------- function is part of a theme’s setup, ensuring that the theme is compatible  //* -------------------
 
 function block_theme_setup() {
-	add_theme_support( 'editor-styles' ); 
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'style.css' );
+	
 	add_theme_support( 'responsive-embeds' );  
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'wp-block-layout' );
 	add_theme_support( 'spacing' );
+
 
 }
 add_action( 'after_setup_theme', 'block_theme_setup' );
