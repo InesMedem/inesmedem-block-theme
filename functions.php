@@ -7,6 +7,13 @@ function mytheme_enqueue_styles() {
 		get_stylesheet_uri(),
 		array() 
 	);
+// Add PPTelegraf fonts
+wp_enqueue_style(
+	'pptelegraf-font',
+	get_template_directory_uri() . '/src/fonts/fonts.css',
+	array(),
+	null
+);
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_styles' );
 

@@ -1,0 +1,22 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+
+  <!-- wp:query {"queryId":1,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post"},"displayLayout":{"type":"list","columns":1}} -->
+    <!-- wp:post-template -->
+      <!-- wp:group {"tagName":"article","layout":{"type":"constrained"}} -->
+        <!-- wp:post-title {"isLink":true,"level":2} /-->
+        <!-- wp:post-date /-->
+        <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+      <!-- /wp:group -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+      <!-- wp:query-pagination-previous /-->
+      <!-- wp:query-pagination-numbers /-->
+      <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+  <!-- /wp:query -->
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

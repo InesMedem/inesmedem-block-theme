@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'PPTelegraf';
+  src: url('PPTelegraf-Regular.woff2') format('woff2'),
+       url('PPTelegraf-Regular.woff') format('woff'),
+       url('PPTelegraf-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPTelegraf';
+  src: url('PPTelegraf-UltraBold.woff2') format('woff2'),
+       url('PPTelegraf-UltraBold.woff') format('woff'),
+       url('PPTelegraf-UltraBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPTelegraf';
+  src: url('PPTelegraf-UltraLight.woff2') format('woff2'),
+       url('PPTelegraf-UltraLight.woff') format('woff'),
+       url('PPTelegraf-UltraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}

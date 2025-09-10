@@ -7,8 +7,9 @@
       "blockGap": true,
       "units": ["px", "em", "rem", "%"]
     },
-        "layout": {
-      "contentSize": "1140px",
+    
+    "layout": {
+      "contentSize": "1300px",
       "wideSize": "1200px"
     },
     "blocks": {
@@ -16,6 +17,8 @@
       "core/pagination": {}
     },
     "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
       "palette": [
         { "name": "Yellow", "slug": "yellow", "color": "#fca12f" },
         { "name": "Charcoal", "slug": "charcoal", "color": "#363636" },
@@ -28,9 +31,9 @@
       "customFontSize": true,
       "fontFamilies": [
         {
-          "fontFamily": "Helvetica, Arial, sans-serif",
-          "name": "Helvetica",
-          "slug": "helvetica"
+          "fontFamily": "PPTelegraf, Arial, sans-serif",
+          "name": "PPTelegraf",
+          "slug": "PPTelegraf"
         },
         {
           "fontFamily": "'Times New Roman', serif",
@@ -39,10 +42,10 @@
         }
       ],
       "fontSizes": [
-        { "name": "Small", "slug": "small", "size": "14px" },
-        { "name": "Normal", "slug": "normal", "size": "16px" },
-        { "name": "Large", "slug": "large", "size": "24px" },
-        { "name": "Huge", "slug": "huge", "size": "36px" }
+        { "name": "Small", "slug": "small", "size": "clamp(1rem, 3vw, 1.5rem)" },
+        { "name": "Normal", "slug": "normal", "size": "clamp(1.5rem, 4vw, 2.375rem)" },
+        { "name": "Large", "slug": "large", "size": "clamp(2rem, 5vw, 3.875rem)"  },
+        { "name": "Huge", "slug": "huge", "size": "clamp(2.5rem, 6vw, 6.25rem)" }
       ]
     }
   },
@@ -60,7 +63,7 @@
         "typography": {
           "fontFamily": "PPTelegraf, Arial, sans-serif",
           "textTransform": "uppercase",
-          "fontWeight": "400"
+          "fontWeight": "500"
         },
         "color": {
           "text": "#ffffff",
@@ -70,9 +73,34 @@
           "radius": "40px",
           "width": "0"
         }
+      },
+      "h1": {
+      "typography": {
+        "fontSize": "36px",
+        "fontFamily": "PPTelegraf, Arial, sans-serif",
+        "fontWeight": "500",
+        "lineHeight": "1.2"
+        }
+      },
+      "h2": {
+      "typography": {
+        "fontSize": "30px",
+        "fontFamily": "PPTelegraf, Arial, sans-serif",
+        "fontWeight": "500",
+        "lineHeight": "1.3"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "24px",
+          "fontFamily": "PPTelegraf, Arial, sans-serif",
+          "fontWeight": "500",
+          "lineHeight": "1.4"
+        }
       }
     }
   },
+  
   "templateParts": [
     {
       "name": "header",
